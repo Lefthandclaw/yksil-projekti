@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Diary App</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container" id="login-section">
+    <h2>Login</h2>
+    <form id="login-form">
+      <input type="text" id="username" placeholder="Username" required />
+      <input type="password" id="password" placeholder="Password" required />
+      <button type="submit">Log In</button>
+    </form>
+    <p>
+      Don't have an account?
+      <a href="#" id="show-register">Register here</a>
+    </p>
+  </div>
+
+  <div class="container" id="register-section" style="display: none;">
+    <h2>Register</h2>
+    <form id="register-form">
+      <input type="text" id="reg-username" placeholder="Username" required />
+      <input type="text" id="reg-email" placeholder="Email" required />
+      <input type="password" id="reg-password" placeholder="Password" required />
+      <button type="submit">Register</button>
+    </form>
+    <p>
+      Already have an account?
+      <a href="#" id="show-login">Login here</a>
+    </p>
+  </div>
+
+  <div class="container" id="diary-section" style="display: none;">
+    <h2>Your Diary</h2>
+    <button id="logout-btn">Log Out</button>
+    <hr />
+    <form id="new-entry-form">
+      <input type="date" id="new-entry-date" required />
+      <select id="new-entry-mood" required>
+        <option value="">Select Mood</option>
+        <option value="happy">Happy</option>
+        <option value="sad">Sad</option>
+        <option value="neutral">Neutral</option>
+        <option value="excited">Excited</option>
+        <option value="tired">Tired</option>
+      </select>
+      <input type="text" id="new-entry-weight" placeholder="Weight" required />
+      <input type="text" id="new-entry-sleep-hours" placeholder="Sleep hours" required />
+      <textarea id="new-entry-notes" placeholder="Write your diary entry note here..." required></textarea>
+      <button type="submit">Add Entry</button>
+    </form>
+    <br>
+    <hr />
+    <br>
+    <!-- Sort Options -->
+    <div id="sort-options">
+      <h3>Sort your entries</h3>
+      <label for="sort-field">Sort by:</label>
+      <select id="sort-field">
+        <option value="entry_date">Entry Date</option>
+        <option value="weight">Weight</option>
+        <option value="sleep_hours">Sleep Hours</option>
+        <option value="created_at">Created At</option>
+      </select>
+      <label for="sort-order">Order:</label>
+      <select id="sort-order">
+        <option value="asc">Ascending</option>
+        <option value="desc" selected>Descending</option>
+      </select>
+    </div>
+    <!-- Diary Entries List -->
+    <div id="entries">
+      <!-- Entries will be dynamically inserted here -->
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

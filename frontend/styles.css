@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: #f2f2f2;
+  padding: 20px;
+  margin: 0;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Apply uniform styling for inputs, textareas, and select dropdowns */
+input, textarea, select {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+/* Optional: Enhance the appearance of the dropdown arrow */
+select {
+  background-color: #fff;
+  appearance: none;
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 10px 6px;
+}
+  
+button {
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.entry {
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+}
+
+.entry:last-child {
+  border-bottom: none;
+}
+
+small {
+  color: #555;
+}
