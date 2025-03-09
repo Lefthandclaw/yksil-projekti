@@ -1,7 +1,5 @@
-// Base URL for the API endpoints (adjust as needed)
 const apiBaseUrl = 'http://localhost:3000/api';
 
-// DOM Elements
 const loginSection = document.getElementById('login-section');
 const registerSection = document.getElementById('register-section');
 const diarySection = document.getElementById('diary-section');
@@ -16,27 +14,22 @@ const logoutBtn = document.getElementById('logout-btn');
 const newEntryForm = document.getElementById('new-entry-form');
 const entriesContainer = document.getElementById('entries');
 
-// Retrieve the JWT token from localStorage, if available
 let jwtToken = localStorage.getItem('jwtToken');
 
-// If token exists, show diary section
 if (jwtToken) {
   showDiary();
 }
 
-// Toggle to show the registration form
 showRegisterLink.addEventListener('click', (e) => {
   e.preventDefault();
   showRegister();
 });
 
-// Toggle to show the login form
 showLoginLink.addEventListener('click', (e) => {
   e.preventDefault();
   showLogin();
 });
 
-// Handle Login Form Submission
 loginForm.addEventListener('submit', async (e) => {
   e.preventDefault();
   const username = document.getElementById('username').value;
@@ -55,7 +48,7 @@ loginForm.addEventListener('submit', async (e) => {
       throw new Error('Invalid credentials.');
     }
     const data = await response.json();
-    jwtToken = data.token; // expecting { token: '...' }
+    jwtToken = data.token; 
     localStorage.setItem('jwtToken', jwtToken);
     showDiary();
   } catch (error) {
@@ -63,7 +56,6 @@ loginForm.addEventListener('submit', async (e) => {
   }
 });
 
-// Handle Registration Form Submission
 registerForm.addEventListener('submit', async (e) => {
   e.preventDefault();
   const username = document.getElementById('reg-username').value;
@@ -98,18 +90,15 @@ registerForm.addEventListener('submit', async (e) => {
   }
 });
 
-// Handle Logout
 logoutBtn.addEventListener('click', () => {
   localStorage.removeItem('jwtToken');
   jwtToken = null;
   showLogin();
 });
 
-// Handle New Diary Entry Submission
 newEntryForm.addEventListener('submit', async (e) => {
   e.preventDefault();
 
-  // Get values from the new entry form
   const dateInput = document.getElementById('new-entry-date').value;
   const entry_date = new Date(dateInput).toISOString().split('T')[0];
   const mood = document.getElementById('new-entry-mood').value;
@@ -135,7 +124,6 @@ newEntryForm.addEventListener('submit', async (e) => {
     if (!response.ok) {
       throw new Error('Failed to add entry.');
     }
-    // Clear the new entry form and fetch entries again
     document.getElementById('new-entry-date').value = '';
     document.getElementById('new-entry-mood').value = '';
     document.getElementById('new-entry-weight').value = '';
@@ -147,7 +135,6 @@ newEntryForm.addEventListener('submit', async (e) => {
   }
 });
 
-// Fetch Diary Entries from the API
 async function fetchEntries() {
   try {
     const response = await fetch(`${apiBaseUrl}/entries`, {
@@ -157,29 +144,25 @@ async function fetchEntries() {
       throw new Error('Failed to fetch entries.');
     }
     const entries = await response.json();
-    entriesCache = entries; // Save a copy for sorting
+    entriesCache = entries;
     renderEntries(entries);
   } catch (error) {
     console.error('Error fetching entries:', error);
   }
 }
 
-// Listen for changes on the sort options and re-render entries when changed
 document.getElementById('sort-field').addEventListener('change', () => renderEntries(entriesCache));
 document.getElementById('sort-order').addEventListener('change', () => renderEntries(entriesCache));
 
-// Render Diary Entries in the DOM based on selected sort options
 function renderEntries(entries) {
   console.log('Rendering entries:', entries);
   const sortField = document.getElementById('sort-field').value;
   const sortOrder = document.getElementById('sort-order').value;
   
-  // Create a copy and sort the entries
   const sortedEntries = [...entries].sort((a, b) => {
     let aVal = a[sortField];
     let bVal = b[sortField];
 
-    // For date fields, convert to Date objects
     if (sortField === 'entry_date' || sortField === 'created_at') {
       aVal = new Date(aVal);
       bVal = new Date(bVal);
@@ -190,7 +173,6 @@ function renderEntries(entries) {
     return 0;
   });
   
-  // Render the sorted entries
   entriesContainer.innerHTML = '';
   if (sortedEntries.length === 0) {
     entriesContainer.innerHTML = '<p>No diary entries yet.</p>';
@@ -218,7 +200,6 @@ function renderEntries(entries) {
     entriesContainer.appendChild(entryDiv);
   });
 
-  // Attach delete event handlers for each delete button
   document.querySelectorAll('.delete-btn').forEach(button => {
     button.addEventListener('click', async (e) => {
       const entryId = e.target.getAttribute('data-id');
@@ -231,7 +212,7 @@ function renderEntries(entries) {
         if (!response.ok) {
           throw new Error('Failed to delete entry.');
         }
-        fetchEntries(); // Refresh the entry list
+        fetchEntries();
       } catch (error) {
         alert('Error deleting entry: ' + error.message);
       }
@@ -239,7 +220,6 @@ function renderEntries(entries) {
   });
 }
 
-// Toggle functions to show/hide sections
 function showLogin() {
   loginSection.style.display = 'block';
   registerSection.style.display = 'none';

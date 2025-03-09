@@ -14,11 +14,7 @@ entryRouter
     body('mood').trim().notEmpty().isLength({min: 3, max: 25}).escape(),
     body('weight', 'must be number between 2-200').isFloat({min: 2, max: 200}),
     body('sleep_hours').isInt({min: 0, max: 24}),
-    //body('notes').isLength({min: 0, max: 1500}).escape(),
     body('notes').trim().escape().custom((value, {req}) => {
-      // customvalidointiesimerkki: jos sisältö sama kuin mood-kentässä
-      // -> ei mee läpi
-      // https://express-validator.github.io/docs/guides/customizing#implementing-a-custom-validator
       console.log('custom validator', value);
       return !(req.body.mood === value);
     }),

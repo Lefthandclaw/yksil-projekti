@@ -16,7 +16,6 @@ body {
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-/* Apply uniform styling for inputs, textareas, and select dropdowns */
 input, textarea, select {
   width: 100%;
   padding: 10px;
@@ -28,7 +27,6 @@ input, textarea, select {
   font-size: 1rem;
 }
 
-/* Optional: Enhance the appearance of the dropdown arrow */
 select {
   background-color: #fff;
   appearance: none;

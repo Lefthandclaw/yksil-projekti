@@ -1,4 +1,3 @@
--- Drop the database if it exists and then create it
 DROP DATABASE IF EXISTS healthdiary;
 CREATE DATABASE healthdiary;
 
@@ -46,7 +45,6 @@ CREATE TABLE Exercises (
     FOREIGN KEY (user_id) REFERENCES Users(user_id) ON DELETE CASCADE
 );
 
--- Insert sample data
 
 INSERT INTO Users (username, password, email, created_at, user_level) VALUES
 ('johndoe', 'hashed_password', 'johndoe@example.com', '2024-01-01 09:00:00', 'regular'),

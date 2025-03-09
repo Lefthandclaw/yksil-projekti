@@ -7,7 +7,6 @@ body {
     margin: 0;
   }
   
-  /* Container styling for a clean panel look */
   .container {
     max-width: 800px;
     margin: 0 auto 20px;
@@ -17,7 +16,6 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
   
-  /* Uniform styling for inputs */
   input, textarea, select {
     width: 100%;
     padding: 10px;
@@ -28,13 +26,11 @@ body {
     font-size: 1rem;
   }
   
-  /* Styling for buttons */
   button {
     padding: 10px 20px;
     cursor: pointer;
   }
   
-  /* Table styling for displaying users */
   table {
     width: 100%;
     border-collapse: collapse;
@@ -47,7 +43,6 @@ body {
     text-align: left;
   }
   
-  /* Delete button specific styling */
   .delete-btn {
     background-color: #ff4d4d;
     border: none;

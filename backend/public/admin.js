@@ -1,7 +1,5 @@
-// Base URL for admin API endpoints (adjust as needed)
 const adminApiBaseUrl = 'http://localhost:3000/api';
 
-// DOM Elements
 const adminLoginSection = document.getElementById('admin-login-section');
 const adminPanelSection = document.getElementById('admin-panel-section');
 
@@ -11,14 +9,12 @@ const adminLogoutBtn = document.getElementById('admin-logout-btn');
 const addUserForm = document.getElementById('add-user-form');
 const usersList = document.getElementById('users-list');
 
-// Retrieve the admin JWT token from localStorage, if available
 let adminJwtToken = localStorage.getItem('adminJwtToken');
 
 if (adminJwtToken) {
   showAdminPanel();
 }
 
-// Handle Admin Login Form Submission
 adminLoginForm.addEventListener('submit', async (e) => {
   e.preventDefault();
   const username = document.getElementById('admin-username').value;
@@ -37,7 +33,7 @@ adminLoginForm.addEventListener('submit', async (e) => {
       throw new Error('Invalid admin credentials.');
     }
     const data = await response.json();
-    adminJwtToken = data.token; // expecting { token: '...' }
+    adminJwtToken = data.token; 
     localStorage.setItem('adminJwtToken', adminJwtToken);
     showAdminPanel();
   } catch (error) {
@@ -45,27 +41,23 @@ adminLoginForm.addEventListener('submit', async (e) => {
   }
 });
 
-// Handle Admin Logout
 adminLogoutBtn.addEventListener('click', () => {
   localStorage.removeItem('adminJwtToken');
   adminJwtToken = null;
   showAdminLogin();
 });
 
-// Display admin login view
 function showAdminLogin() {
   adminLoginSection.style.display = 'block';
   adminPanelSection.style.display = 'none';
 }
 
-// Display admin panel view and fetch users
 function showAdminPanel() {
   adminLoginSection.style.display = 'none';
   adminPanelSection.style.display = 'block';
   fetchUsers();
 }
 
-// Handle Add User Form Submission
 addUserForm.addEventListener('submit', async (e) => {
   e.preventDefault();
   const username = document.getElementById('new-user-username').value;
@@ -88,17 +80,15 @@ addUserForm.addEventListener('submit', async (e) => {
     if (!response.ok) {
       throw new Error('Failed to add user.');
     }
-    // Clear form fields
     document.getElementById('new-user-username').value = '';
     document.getElementById('new-user-email').value = '';
     document.getElementById('new-user-password').value = '';
-    fetchUsers(); // Refresh the list of users
+    fetchUsers(); 
   } catch (error) {
     alert('Error adding user: ' + error.message);
   }
 });
 
-// Fetch all users from the API
 async function fetchUsers() {
   try {
     const response = await fetch(`${adminApiBaseUrl}/users`, {
@@ -115,7 +105,6 @@ async function fetchUsers() {
   }
 }
 
-// Render users in a table
 function renderUsers(users) {
   let tableHTML = `
     <table>
@@ -132,7 +121,7 @@ function renderUsers(users) {
 
   users.forEach(user => {
     if (user.user_level === 'admin') {
-      return; // Skip rendering the admin user
+      return; 
     }
     tableHTML += `
       <tr>
@@ -152,7 +141,6 @@ function renderUsers(users) {
   `;
   usersList.innerHTML = tableHTML;
 
-  // Attach delete event handlers for each delete button
   document.querySelectorAll('.delete-btn').forEach(button => {
     button.addEventListener('click', async (e) => {
       const userId = e.target.getAttribute('data-id');
@@ -165,7 +153,7 @@ function renderUsers(users) {
         if (!response.ok) {
           throw new Error('Failed to delete user.');
         }
-        fetchUsers(); // Refresh the user list
+        fetchUsers();
       } catch (error) {
         alert('Error deleting user: ' + error.message);
       }
