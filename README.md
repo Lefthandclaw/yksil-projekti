@@ -48,3 +48,29 @@ Lyhyesti: Sivusto tarjoaa käyttäjille päiväkirjan ja adminille työkalut kä
 
 referenssit:
 matin backend, siskon miehen apua.
+
+#Tehtävä: Testaus (20 p). Y. Sakari
+
+Tehtävä 1:
+Asennetut työkalut: 
+- Robot Framework
+![Screenshot (44)](https://github.com/user-attachments/assets/39e7e206-d26c-4950-abb4-fb1527e205a7)
+Asennettu näiden ohjeiden mukaan: https://robotframework.org/?tab=1#getting-started:~:text=pip%20install%20robotframework
+
+- Browser Library
+![Screenshot (45)](https://github.com/user-attachments/assets/29f091e4-f1a2-4768-9c4d-1b4860bcd641)
+![Screenshot (46)](https://github.com/user-attachments/assets/2e7d84df-f872-4379-b49a-08ee0905ca38)
+![Screenshot (47)](https://github.com/user-attachments/assets/6757cc63-6295-459e-ab84-f0e4db01c7f4)
+Asennettu näiden ohjeiden mukaan: https://robotframework-browser.org/#installation:~:text=library%20from%20PyPi%20with%20pip%3A-,%3E%20pip%20install%20robotframework%2Dbrowser,-Initialize%20the%20Browser%20library%20and
+
+- Requests library
+![Screenshot (48)](https://github.com/user-attachments/assets/c5009e40-3898-4cf1-b950-505bda38faf9)
+Asennetu näiden ohjeiden avulla, mutta sain apua tekoälyltä: https://docs.robotframework.org/docs/different_libraries/requests#:~:text=pip%20install%20robotframework%2Drequests
+
+- CryptoLibrary
+![Screenshot (49)](https://github.com/user-attachments/assets/1f6ecbb2-7e8f-4715-a4f2-76f543e20194)
+Asennettu näiden ohjeiden avulla: https://michaelhallik.github.io/blog/2021/11/24/Robot-Framework-Crypto-Library#:~:text=pip%20install%20robotframework%2Dcrypto
+
+- Robotidy
+![Screenshot (50)](https://github.com/user-attachments/assets/f9fa3493-db98-40df-964d-1a92fedb0e0b)
+Asennettu näiden ohjeiden avulla: https://robotidy.readthedocs.io/en/stable/#:~:text=pip%20install%20robotframework%2Dtidy
