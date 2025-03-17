@@ -52,6 +52,7 @@ matin backend, siskon miehen apua.
 #Tehtävä: Testaus (20 p). Y. Sakari
 
 Tehtävä 1:
+Asennettu visual studion code:n terminaalissa.
 Asennetut työkalut: 
 - Robot Framework
 ![Screenshot (44)](https://github.com/user-attachments/assets/39e7e206-d26c-4950-abb4-fb1527e205a7)
@@ -68,6 +69,7 @@ Asennettu näiden ohjeiden mukaan: https://robotframework-browser.org/#installat
 Asennetu näiden ohjeiden avulla, mutta sain apua tekoälyltä: https://docs.robotframework.org/docs/different_libraries/requests#:~:text=pip%20install%20robotframework%2Drequests
 
 - CryptoLibrary
+![Screenshot (51)](https://github.com/user-attachments/assets/77618236-4d8f-4db2-ac0b-8b02a2010370)
 ![Screenshot (49)](https://github.com/user-attachments/assets/1f6ecbb2-7e8f-4715-a4f2-76f543e20194)
 Asennettu näiden ohjeiden avulla: https://michaelhallik.github.io/blog/2021/11/24/Robot-Framework-Crypto-Library#:~:text=pip%20install%20robotframework%2Dcrypto
 
