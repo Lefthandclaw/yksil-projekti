@@ -49,9 +49,9 @@ Lyhyesti: Sivusto tarjoaa käyttäjille päiväkirjan ja adminille työkalut kä
 referenssit:
 matin backend, siskon miehen apua.
 
-#Tehtävä: Testaus (20 p). Y. Sakari
+# Tehtävä: Testaus (20 p). Y. Sakari
 
-Tehtävä 1:
+## Tehtävä 1:
 Asennettu visual studion code:n terminaalissa.
 Asennetut työkalut: 
 - Robot Framework
@@ -76,3 +76,14 @@ Asennettu näiden ohjeiden avulla: https://michaelhallik.github.io/blog/2021/11/
 - Robotidy
 ![Screenshot (50)](https://github.com/user-attachments/assets/f9fa3493-db98-40df-964d-1a92fedb0e0b)
 Asennettu näiden ohjeiden avulla: https://robotidy.readthedocs.io/en/stable/#:~:text=pip%20install%20robotframework%2Dtidy
+
+## Tehtävä 2
+Sovella esimerkkiä ja tee kirjautumistesti omalle terveyspäiväkirja-sovelluksellesi.
+![Screenshot (52)](https://github.com/user-attachments/assets/b07f49c7-5145-4bac-8306-c7c1265478ce)
+
+## Tehtävä 3
+Tutki lisää Browser Libraryn käyttöä. Tee testi, joka testaa Web form-esimerkkisivun muiden
+kenttien toimintaa (Dropdown (select), Dropwdown (datalist), File input, Checkboxit, Radio
+buttonit, jne).
+![Screenshot (53)](https://github.com/user-attachments/assets/bd681a59-48ce-4937-8dbf-1c9bd49fd4a3)
+
