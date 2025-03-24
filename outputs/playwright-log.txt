@@ -1,0 +1,17 @@
+{"level":30,"time":"2025-03-24T18:23:51.968Z","pid":38264,"hostname":"Motha","msg":"Listening on 61275"}
+(node:38264) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+{"level":30,"time":"2025-03-24T18:23:52.450Z","pid":38264,"hostname":"Motha","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2025-03-24T18:23:52.619Z","pid":38264,"hostname":"Motha","msg":"Adding browser to stack: chromium, version: 134.0.6998.35"}
+{"level":30,"time":"2025-03-24T18:23:52.619Z","pid":38264,"hostname":"Motha","msg":"End of node method newBrowser"}
+{"level":30,"time":"2025-03-24T18:23:52.619Z","pid":38264,"hostname":"Motha","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2025-03-24T18:23:52.625Z","pid":38264,"hostname":"Motha","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-03-24T18:23:52.626Z","pid":38264,"hostname":"Motha","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2025-03-24T18:23:52.639Z","pid":38264,"hostname":"Motha","msg":"Changed active context"}
+{"level":30,"time":"2025-03-24T18:23:52.780Z","pid":38264,"hostname":"Motha","msg":"Video path: undefined"}
+{"level":30,"time":"2025-03-24T18:23:52.781Z","pid":38264,"hostname":"Motha","msg":"Changed active page"}
+{"level":30,"time":"2025-03-24T18:23:52.990Z","pid":38264,"hostname":"Motha","msg":"End of node method newPage"}
+{"level":30,"time":"2025-03-24T18:23:54.005Z","pid":38264,"hostname":"Motha","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2025-03-24T18:23:54.005Z","pid":38264,"hostname":"Motha","Take screenshot with options: ":{"path":"C:\\Users\\motha\\yksil-projekti\\browser\\screenshot\\fail-screenshot-1.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2025-03-24T18:23:54.068Z","pid":38264,"hostname":"Motha","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2025-03-24T18:24:15.360Z","pid":38264,"hostname":"Motha","msg":"Removed page=d446e0f3-db0b-485e-8538-98360e78dc06 from context=0cb6589e-5d57-41d5-9052-13e25c95d3e0 page stack"}
