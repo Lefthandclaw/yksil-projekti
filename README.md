@@ -76,3 +76,8 @@ Asennettu näiden ohjeiden avulla: https://michaelhallik.github.io/blog/2021/11/
 - Robotidy
 ![Screenshot (50)](https://github.com/user-attachments/assets/f9fa3493-db98-40df-964d-1a92fedb0e0b)
 Asennettu näiden ohjeiden avulla: https://robotidy.readthedocs.io/en/stable/#:~:text=pip%20install%20robotframework%2Dtidy
+
+## Tehtävä 2
+Sovella esimerkkiä ja tee kirjautumistesti omalle terveyspäiväkirja-sovelluksellesi.
+![Screenshot (52)](https://github.com/user-attachments/assets/b07f49c7-5145-4bac-8306-c7c1265478ce)
+
