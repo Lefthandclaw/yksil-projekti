@@ -81,3 +81,9 @@ Asennettu näiden ohjeiden avulla: https://robotidy.readthedocs.io/en/stable/#:~
 Sovella esimerkkiä ja tee kirjautumistesti omalle terveyspäiväkirja-sovelluksellesi.
 ![Screenshot (52)](https://github.com/user-attachments/assets/b07f49c7-5145-4bac-8306-c7c1265478ce)
 
+## Tehtävä 3
+Tutki lisää Browser Libraryn käyttöä. Tee testi, joka testaa Web form-esimerkkisivun muiden
+kenttien toimintaa (Dropdown (select), Dropwdown (datalist), File input, Checkboxit, Radio
+buttonit, jne).
+![Screenshot (53)](https://github.com/user-attachments/assets/bd681a59-48ce-4937-8dbf-1c9bd49fd4a3)
+
