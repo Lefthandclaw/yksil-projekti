@@ -78,12 +78,14 @@ Asennettu näiden ohjeiden avulla: https://michaelhallik.github.io/blog/2021/11/
 Asennettu näiden ohjeiden avulla: https://robotidy.readthedocs.io/en/stable/#:~:text=pip%20install%20robotframework%2Dtidy
 
 ## Tehtävä 2
-Sovella esimerkkiä ja tee kirjautumistesti omalle terveyspäiväkirja-sovelluksellesi.
+Tehtävä oli simppeli.
 ![Screenshot (52)](https://github.com/user-attachments/assets/b07f49c7-5145-4bac-8306-c7c1265478ce)
 
 ## Tehtävä 3
-Tutki lisää Browser Libraryn käyttöä. Tee testi, joka testaa Web form-esimerkkisivun muiden
-kenttien toimintaa (Dropdown (select), Dropwdown (datalist), File input, Checkboxit, Radio
-buttonit, jne).
+Kesti kauan ettiä tarvittavat tiedonlähteet mutta tämä sivu auttoi super paljon: https://marketsquare.github.io/robotframework-browser/Browser.html?tag=BrowserControl#library-documentation-top
 ![Screenshot (53)](https://github.com/user-attachments/assets/bd681a59-48ce-4937-8dbf-1c9bd49fd4a3)
+
+## Tehtävä 4
+Käytin tehtävä 3:ssa opittuja asiota niin meni sujuvasti.
+![Screenshot (55)](https://github.com/user-attachments/assets/ae558d41-91f9-42f9-8310-c5309ec1c28a)
 
