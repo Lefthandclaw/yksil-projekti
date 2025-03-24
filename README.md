@@ -49,9 +49,9 @@ Lyhyesti: Sivusto tarjoaa käyttäjille päiväkirjan ja adminille työkalut kä
 referenssit:
 matin backend, siskon miehen apua.
 
-#Tehtävä: Testaus (20 p). Y. Sakari
+# Tehtävä: Testaus (20 p). Y. Sakari
 
-Tehtävä 1:
+## Tehtävä 1:
 Asennettu visual studion code:n terminaalissa.
 Asennetut työkalut: 
 - Robot Framework
