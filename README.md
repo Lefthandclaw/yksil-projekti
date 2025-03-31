@@ -94,3 +94,8 @@ Käytin tehtävä 3:ssa opittuja asiota niin meni sujuvasti.
 Käytin opettajalta saatui github materiaalia avuksi.
 
 ![Screenshot (56)](https://github.com/user-attachments/assets/df70ef73-1e43-4f88-9d34-10d80991de3a)
+
+## Tehtävä 6
+Käytin tässäkin opettajan linkkaamaa githubin ohjeita.
+![Screenshot (57)](https://github.com/user-attachments/assets/bd0112f4-16ab-42bd-9f67-7327d375ff86)
+
