@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.1 on win32)" generated="2025-04-07T16:53:03.524574" rpa="false" schemaversion="5">
+<suite id="s1" name="Browser Demo" source="C:\Users\motha\yksil-projekti\tests\tests.tehtävä2\browser_demo.robot">
+<test id="s1-t1" name="Test Web Form" line="6">
+<kw name="New Browser" owner="Browser">
+<msg time="2025-04-07T16:53:04.160002" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\motha\\yksil-projekti\\tests\\outputs\\browser\\traces\\temp\\93edb486-0a13-49c0-9e0c-998ae8ad118a"}</msg>
+<msg time="2025-04-07T16:53:04.180127" level="INFO">Starting Browser process C:\Users\motha\AppData\Roaming\Python\Python313\site-packages\Browser\wrapper\index.js using port 50964</msg>
+<msg time="2025-04-07T16:53:04.180586" level="INFO">Node startup parameters: ['node', 'C:\\Users\\motha\\AppData\\Roaming\\Python\\Python313\\site-packages\\Browser\\wrapper\\index.js', '50964']</msg>
+<msg time="2025-04-07T16:53:06.045711" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\motha\\yksil-projekti\\tests\\outputs\\browser\\traces\\temp\\93edb486-0a13-49c0-9e0c-998ae8ad118a"}</msg>
+<arg>chromium</arg>
+<arg>headless=No</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-04-07T16:53:04.158849" elapsed="1.887191"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2025-04-07T16:53:06.534598" level="INFO">Successfully initialized new page object and opened url: https://www.selenium.dev/selenium/web/web-form.html</msg>
+<msg time="2025-04-07T16:53:06.534677" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>https://www.selenium.dev/selenium/web/web-form.html</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2025-04-07T16:53:06.046962" elapsed="0.487852"/>
+</kw>
+<kw name="Get Title" owner="Browser">
+<msg time="2025-04-07T16:53:06.542066" level="INFO">Title: 'Web form'</msg>
+<arg>==</arg>
+<arg>Web form</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the title of the current page.</doc>
+<status status="PASS" start="2025-04-07T16:53:06.535079" elapsed="0.007116"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2025-04-07T16:53:06.543162" level="INFO">Types the text 'somebody@example.com' in the given field.</msg>
+<arg>[name="my-text"]</arg>
+<arg>${Username}</arg>
+<arg>delay=0.1 s</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-04-07T16:53:06.542524" elapsed="2.213250"/>
+</kw>
+<kw name="Type Secret" owner="Browser">
+<arg>[name="my-password"]</arg>
+<arg>$Password</arg>
+<arg>delay=0.1 s</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given secret from ``variable_name`` into the text field
+found by ``selector``.</doc>
+<status status="PASS" start="2025-04-07T16:53:08.756113" elapsed="1.310625"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2025-04-07T16:53:10.067670" level="INFO">Types the text 'Hello, Robot Framework!
+How are you today?' in the given field.</msg>
+<arg>[name="my-textarea"]</arg>
+<arg>${Message}</arg>
+<arg>delay=0.1 s</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-04-07T16:53:10.067093" elapsed="4.571600"/>
+</kw>
+<kw name="Click With Options" owner="Browser">
+<msg time="2025-04-07T16:53:14.639478" level="INFO">Clicks the element 'button'.</msg>
+<arg>button</arg>
+<arg>delay=2 s</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-07T16:53:14.638970" elapsed="2.046884"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-04-07T16:53:16.712736" level="INFO">Text: 'Received!'</msg>
+<arg>id=message</arg>
+<arg>==</arg>
+<arg>Received!</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-04-07T16:53:16.686128" elapsed="0.026716"/>
+</kw>
+<msg time="2025-04-07T16:53:16.715207" level="INFO">Set timeout to: 10000</msg>
+<status status="PASS" start="2025-04-07T16:53:04.157963" elapsed="12.555142"/>
+</test>
+<status status="PASS" start="2025-04-07T16:53:03.525645" elapsed="13.190223"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Browser Demo" id="s1" pass="1" fail="0" skip="0">Browser Demo</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
