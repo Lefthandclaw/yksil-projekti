@@ -107,3 +107,9 @@ käytin opettajan linkkamia github ohjeita.
 käytin opettajan linkkaama githubia, käytin myös avoimen ilmasen chatgpt:een avustusta itseni ohjaamisessa.
 https://lefthandclaw.github.io/yksil-projekti/tests/outputs/log.html
 https://lefthandclaw.github.io/yksil-projekti/tests/outputs/report.html
+
+## Tehtävä 9
+Tein github ohjeiden avulla
+![Screenshot (59)](https://github.com/user-attachments/assets/02cd7b17-6337-4fb9-abd8-04e66c017e5c)
+
+
