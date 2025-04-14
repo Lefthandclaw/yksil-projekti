@@ -1,30 +1,46 @@
-{"level":30,"time":"2025-04-07T13:53:04.954Z","pid":11680,"hostname":"Motha","msg":"Listening on 50964"}
-(node:11680) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
+{"level":30,"time":"2025-04-14T15:58:58.182Z","pid":16224,"hostname":"Motha","msg":"Listening on 52591"}
+(node:16224) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
 (Use `node --trace-deprecation ...` to show where the warning was created)
-{"level":30,"time":"2025-04-07T13:53:05.262Z","pid":11680,"hostname":"Motha","msg":"Start of node method newBrowser"}
-{"level":30,"time":"2025-04-07T13:53:06.043Z","pid":11680,"hostname":"Motha","msg":"Adding browser to stack: chromium, version: 134.0.6998.35"}
-{"level":30,"time":"2025-04-07T13:53:06.044Z","pid":11680,"hostname":"Motha","msg":"End of node method newBrowser"}
-{"level":30,"time":"2025-04-07T13:53:06.044Z","pid":11680,"hostname":"Motha","msg":"Adding 0 contexts to browser"}
-{"level":30,"time":"2025-04-07T13:53:06.050Z","pid":11680,"hostname":"Motha","msg":"Start of node method newPage"}
-{"level":30,"time":"2025-04-07T13:53:06.050Z","pid":11680,"hostname":"Motha","msg":"currentBrowser: [object Object]"}
-{"level":30,"time":"2025-04-07T13:53:06.063Z","pid":11680,"hostname":"Motha","msg":"Changed active context"}
-{"level":30,"time":"2025-04-07T13:53:06.174Z","pid":11680,"hostname":"Motha","msg":"Video path: undefined"}
-{"level":30,"time":"2025-04-07T13:53:06.174Z","pid":11680,"hostname":"Motha","msg":"Changed active page"}
-{"level":30,"time":"2025-04-07T13:53:06.533Z","pid":11680,"hostname":"Motha","msg":"End of node method newPage"}
-{"level":30,"time":"2025-04-07T13:53:06.544Z","pid":11680,"hostname":"Motha","msg":"Start of node method typeText"}
-{"level":30,"time":"2025-04-07T13:53:06.544Z","pid":11680,"hostname":"Motha","msg":"Strict mode is enabled, find Locator with [name=\"my-text\"] in page."}
-{"level":30,"time":"2025-04-07T13:53:08.754Z","pid":11680,"hostname":"Motha","msg":"End of node method typeText"}
-{"level":30,"time":"2025-04-07T13:53:08.757Z","pid":11680,"hostname":"Motha","msg":"Start of node method typeText"}
-{"level":30,"time":"2025-04-07T13:53:08.757Z","pid":11680,"hostname":"Motha","msg":"Strict mode is enabled, find Locator with [name=\"my-password\"] in page."}
-{"level":30,"time":"2025-04-07T13:53:10.065Z","pid":11680,"hostname":"Motha","msg":"End of node method typeText"}
-{"level":30,"time":"2025-04-07T13:53:10.068Z","pid":11680,"hostname":"Motha","msg":"Start of node method typeText"}
-{"level":30,"time":"2025-04-07T13:53:10.068Z","pid":11680,"hostname":"Motha","msg":"Strict mode is enabled, find Locator with [name=\"my-textarea\"] in page."}
-{"level":30,"time":"2025-04-07T13:53:14.637Z","pid":11680,"hostname":"Motha","msg":"End of node method typeText"}
-{"level":30,"time":"2025-04-07T13:53:14.640Z","pid":11680,"hostname":"Motha","msg":"Start of node method click"}
-{"level":30,"time":"2025-04-07T13:53:14.640Z","pid":11680,"hostname":"Motha","msg":"Strict mode is enabled, find Locator with button in page."}
-{"level":30,"time":"2025-04-07T13:53:16.684Z","pid":11680,"hostname":"Motha","msg":"End of node method click"}
-{"level":30,"time":"2025-04-07T13:53:16.688Z","pid":11680,"hostname":"Motha","msg":"Start of node method getText"}
-{"level":30,"time":"2025-04-07T13:53:16.688Z","pid":11680,"hostname":"Motha","msg":"Strict mode is enabled, find Locator with id=message in page."}
-{"level":30,"time":"2025-04-07T13:53:16.711Z","pid":11680,"hostname":"Motha","msg":"Retrieved text for element id=message containing Received!"}
-{"level":30,"time":"2025-04-07T13:53:16.711Z","pid":11680,"hostname":"Motha","msg":"End of node method getText"}
-{"level":30,"time":"2025-04-07T13:53:30.185Z","pid":11680,"hostname":"Motha","msg":"Removed page=8cd47c98-011e-41f4-9517-8edec53e5ed2 from context=6127097c-cb79-4799-a1b4-def0ee780894 page stack"}
+{"level":30,"time":"2025-04-14T15:58:58.221Z","pid":16224,"hostname":"Motha","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2025-04-14T15:58:58.393Z","pid":16224,"hostname":"Motha","msg":"Adding browser to stack: chromium, version: 134.0.6998.35"}
+{"level":30,"time":"2025-04-14T15:58:58.394Z","pid":16224,"hostname":"Motha","msg":"End of node method newBrowser"}
+{"level":30,"time":"2025-04-14T15:58:58.393Z","pid":16224,"hostname":"Motha","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2025-04-14T15:58:58.400Z","pid":16224,"hostname":"Motha","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-04-14T15:58:58.401Z","pid":16224,"hostname":"Motha","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2025-04-14T15:58:58.414Z","pid":16224,"hostname":"Motha","msg":"Changed active context"}
+{"level":30,"time":"2025-04-14T15:58:58.521Z","pid":16224,"hostname":"Motha","msg":"Video path: undefined"}
+{"level":30,"time":"2025-04-14T15:58:58.521Z","pid":16224,"hostname":"Motha","msg":"Changed active page"}
+{"level":30,"time":"2025-04-14T15:58:58.777Z","pid":16224,"hostname":"Motha","msg":"End of node method newPage"}
+{"level":30,"time":"2025-04-14T15:58:58.789Z","pid":16224,"hostname":"Motha","msg":"Start of node method typeText"}
+{"level":30,"time":"2025-04-14T15:58:58.789Z","pid":16224,"hostname":"Motha","msg":"Strict mode is enabled, find Locator with [name=\"my-text\"] in page."}
+{"level":30,"time":"2025-04-14T15:59:00.460Z","pid":16224,"hostname":"Motha","msg":"End of node method typeText"}
+{"level":30,"time":"2025-04-14T15:59:00.463Z","pid":16224,"hostname":"Motha","msg":"Start of node method typeText"}
+{"level":30,"time":"2025-04-14T15:59:00.463Z","pid":16224,"hostname":"Motha","msg":"Strict mode is enabled, find Locator with [name=\"my-password\"] in page."}
+{"level":30,"time":"2025-04-14T15:59:01.793Z","pid":16224,"hostname":"Motha","msg":"End of node method typeText"}
+{"level":30,"time":"2025-04-14T15:59:01.796Z","pid":16224,"hostname":"Motha","msg":"Start of node method typeText"}
+{"level":30,"time":"2025-04-14T15:59:01.796Z","pid":16224,"hostname":"Motha","msg":"Strict mode is enabled, find Locator with [name=\"my-textarea\"] in page."}
+{"level":30,"time":"2025-04-14T15:59:02.353Z","pid":16224,"hostname":"Motha","msg":"End of node method typeText"}
+{"level":30,"time":"2025-04-14T15:59:02.356Z","pid":16224,"hostname":"Motha","msg":"Start of node method selectOption"}
+{"level":30,"time":"2025-04-14T15:59:02.356Z","pid":16224,"hostname":"Motha","msg":"Strict mode is enabled, find Locator with [name=\"my-select\"] in page."}
+{"level":30,"time":"2025-04-14T15:59:02.372Z","pid":16224,"hostname":"Motha","msg":"Option entries: 4"}
+{"level":30,"time":"2025-04-14T15:59:02.372Z","pid":16224,"hostname":"Motha","msg":"End of node method selectOption"}
+{"level":30,"time":"2025-04-14T15:59:02.372Z","pid":16224,"hostname":"Motha","msg":"Selected entries: 1"}
+{"level":30,"time":"2025-04-14T15:59:02.375Z","pid":16224,"hostname":"Motha","msg":"Start of node method typeText"}
+{"level":30,"time":"2025-04-14T15:59:02.375Z","pid":16224,"hostname":"Motha","msg":"Strict mode is enabled, find Locator with [name=\"my-datalist\"] in page."}
+{"level":30,"time":"2025-04-14T15:59:02.392Z","pid":16224,"hostname":"Motha","msg":"End of node method typeText"}
+{"level":30,"time":"2025-04-14T15:59:03.397Z","pid":16224,"hostname":"Motha","msg":"Start of node method keyboardKey"}
+{"level":30,"time":"2025-04-14T15:59:03.397Z","pid":16224,"hostname":"Motha","msg":"Invoking keyboard action press with params [\"Tab\"]"}
+{"level":30,"time":"2025-04-14T15:59:03.400Z","pid":16224,"hostname":"Motha","msg":"End of node method keyboardKey"}
+{"level":30,"time":"2025-04-14T15:59:03.404Z","pid":16224,"hostname":"Motha","msg":"Reading multiplepart uploadFileBySelector"}
+{"level":30,"time":"2025-04-14T15:59:03.405Z","pid":16224,"hostname":"Motha","msg":"Strict mode is enabled, find Locator with [name=my-file] in page."}
+{"level":30,"time":"2025-04-14T15:59:03.405Z","pid":16224,"hostname":"Motha","msg":"Uploading file(s) C:\\Users\\motha\\yksil-projekti\\tests\\tests.tehtävä3\\keywords.robot to [name=my-file]"}
+{"level":30,"time":"2025-04-14T15:59:03.415Z","pid":16224,"hostname":"Motha","msg":"Start of node method uncheckCheckbox"}
+{"level":30,"time":"2025-04-14T15:59:03.415Z","pid":16224,"hostname":"Motha","msg":"Strict mode is enabled, find Locator with [id=\"my-check-1\"] in page."}
+{"level":30,"time":"2025-04-14T15:59:03.442Z","pid":16224,"hostname":"Motha","msg":"End of node method uncheckCheckbox"}
+{"level":30,"time":"2025-04-14T15:59:03.444Z","pid":16224,"hostname":"Motha","msg":"Start of node method checkCheckbox"}
+{"level":30,"time":"2025-04-14T15:59:03.445Z","pid":16224,"hostname":"Motha","msg":"Strict mode is enabled, find Locator with [id=\"my-check-2\"] in page."}
+{"level":30,"time":"2025-04-14T15:59:03.467Z","pid":16224,"hostname":"Motha","msg":"End of node method checkCheckbox"}
+{"level":30,"time":"2025-04-14T15:59:03.470Z","pid":16224,"hostname":"Motha","msg":"Start of node method checkCheckbox"}
+{"level":30,"time":"2025-04-14T15:59:03.470Z","pid":16224,"hostname":"Motha","msg":"Strict mode is enabled, find Locator with [id=\"my-radio-2\"] in page."}
+{"level":30,"time":"2025-04-14T15:59:03.488Z","pid":16224,"hostname":"Motha","msg":"End of node method checkCheckbox"}
+{"level":30,"time":"2025-04-14T15:59:20.165Z","pid":16224,"hostname":"Motha","msg":"Removed page=9a10451d-3e66-44d2-8f4e-0624b594730d from context=51271a5f-97d6-46b2-8a02-6c43edddf20a page stack"}

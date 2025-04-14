@@ -1,0 +1,38 @@
+{"level":30,"time":"2025-04-14T15:59:27.185Z","pid":12568,"hostname":"Motha","msg":"Listening on 52613"}
+(node:12568) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+{"level":30,"time":"2025-04-14T15:59:27.705Z","pid":12568,"hostname":"Motha","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2025-04-14T15:59:27.866Z","pid":12568,"hostname":"Motha","msg":"Adding browser to stack: chromium, version: 134.0.6998.35"}
+{"level":30,"time":"2025-04-14T15:59:27.866Z","pid":12568,"hostname":"Motha","msg":"End of node method newBrowser"}
+{"level":30,"time":"2025-04-14T15:59:27.866Z","pid":12568,"hostname":"Motha","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2025-04-14T15:59:27.872Z","pid":12568,"hostname":"Motha","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-04-14T15:59:27.873Z","pid":12568,"hostname":"Motha","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2025-04-14T15:59:27.884Z","pid":12568,"hostname":"Motha","msg":"Changed active context"}
+{"level":30,"time":"2025-04-14T15:59:27.993Z","pid":12568,"hostname":"Motha","msg":"Video path: undefined"}
+{"level":30,"time":"2025-04-14T15:59:27.994Z","pid":12568,"hostname":"Motha","msg":"Changed active page"}
+{"level":30,"time":"2025-04-14T15:59:30.100Z","pid":12568,"hostname":"Motha","msg":"Error of node method  newPage"}
+================= Original suppressed error =================
+page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:5500/frontend/index.html
+Call log:
+[2m  - navigating to "http://127.0.0.1:5500/frontend/index.html", waiting until "load"[22m
+
+    at newPage (C:\Users\motha\AppData\Roaming\Python\Python313\site-packages\Browser\wrapper\index.js:12567:18)
+    at async PlaywrightServer.newPage (C:\Users\motha\AppData\Roaming\Python\Python313\site-packages\Browser\wrapper\index.js:13132:28) {
+  name: 'Error'
+}
+=============================================================
+{"level":30,"time":"2025-04-14T15:59:30.123Z","pid":12568,"hostname":"Motha","msg":"Start of node method takeScreenshot"}
+================= Original suppressed error =================
+Error: Tried to take screenshot, but no page was open.
+    at exists (C:\Users\motha\AppData\Roaming\Python\Python313\site-packages\Browser\wrapper\index.js:10725:11)
+    at takeScreenshot (C:\Users\motha\AppData\Roaming\Python\Python313\site-packages\Browser\wrapper\index.js:10769:3)
+    at PlaywrightServer.takeScreenshot (C:\Users\motha\AppData\Roaming\Python\Python313\site-packages\Browser\wrapper\index.js:13132:34)
+    at Object.onReceiveHalfClose (C:\Users\motha\AppData\Roaming\Python\Python313\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1461:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\motha\AppData\Roaming\Python\Python313\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:575:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\motha\AppData\Roaming\Python\Python313\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:615:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\motha\AppData\Roaming\Python\Python313\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:382:18)
+    at ServerHttp2Stream.emit (node:events:536:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+=============================================================
+{"level":30,"time":"2025-04-14T15:59:30.123Z","pid":12568,"hostname":"Motha","msg":"Error of node method  takeScreenshot"}
